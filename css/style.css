@@ -532,6 +532,7 @@ template {
             flex-direction: column;
     width: 16px;
     height: 11px;
+    padding: 0;
     border: none;
     background-color: #ffffff;
     cursor: pointer;
