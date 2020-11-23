@@ -6,5 +6,5 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".slider-button--next",
   },
 
-  speed: 800,
+  speed: 750,
 });
