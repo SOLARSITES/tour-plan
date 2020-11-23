@@ -6,5 +6,10 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".slider-button--next",
   },
 
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
   speed: 750,
 });
