@@ -797,6 +797,13 @@ template {
   cursor: pointer;
 }
 
+.map {
+  width: 347px;
+  height: 213px;
+  border-radius: 10px;
+  background-color: #000000;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
