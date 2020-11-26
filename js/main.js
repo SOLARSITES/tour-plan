@@ -29,3 +29,13 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 
   speed: 750,
 });
+
+$(window).scroll(function () {
+  $(".newsletter").bgscroll({
+    direction: "top",
+    bgpositionx: 50,
+    debug: false,
+    min: 0,
+    max: 100,
+  });
+});
