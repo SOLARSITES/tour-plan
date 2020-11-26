@@ -627,6 +627,10 @@ template {
   z-index: 100;
 }
 
+.hotel-slider__button:focus {
+  outline: none;
+}
+
 .hotel-slider__button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
@@ -963,6 +967,10 @@ template {
   height: 30px;
   cursor: pointer;
   z-index: 100;
+}
+
+.reviews-slider__button:focus {
+  outline: none;
 }
 
 .reviews-slider__button--prev {
