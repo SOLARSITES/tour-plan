@@ -885,6 +885,7 @@ template {
 .subscribe__button {
   position: absolute;
   min-width: 65px;
+  max-width: 100px;
   top: 0;
   right: 0;
   height: 100%;
@@ -1329,7 +1330,7 @@ template {
     min-width: 65px;
   }
   .reviews__title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 23px;
   }
   .reviews-slider__item {
