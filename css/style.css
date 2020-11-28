@@ -814,6 +814,80 @@ template {
   overflow: hidden;
 }
 
+.packages {
+  padding: 40px 0 70px;
+}
+
+.packages__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (500px)[2];
+      grid-template-rows: repeat(2, 500px);
+  -ms-grid-columns: (350px)[3];
+      grid-template-columns: repeat(3, 350px);
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+      grid-template-areas: "blue-haven blue-haven belle-mare" "white-palace luxury-place five-star";
+  border: 1px solid red;
+}
+
+.blue-haven {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: blue-haven;
+  width: 730px;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.belle-mare {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: belle-mare;
+  width: 350px;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.white-palace {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: white-palace;
+  width: 350px;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.luxury-place {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: luxury-place;
+  width: 350px;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.five-star {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: five-star;
+  width: 350px;
+  height: 500px;
+  border: 1px solid red;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px;
