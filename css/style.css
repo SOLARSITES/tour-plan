@@ -828,7 +828,7 @@ template {
   margin-bottom: 65px;
 }
 
-.packages-wrapper {
+.packages-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (500px)[2];
@@ -842,22 +842,145 @@ template {
   border: 1px solid red;
 }
 
+.packages__button {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 11px 27px 10px 26px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.case-image {
+  position: relative;
+}
+
+.case-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  background-color: #0A223D;
+  max-width: 364px;
+  padding: 46px 21px 30px 43px;
+}
+
 .blue-haven {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: blue-haven;
-  width: 730px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 730px;
+}
+
+.blue-haven__image {
+  width: 366px;
   height: 500px;
-  border: 1px solid red;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blue-haven__flash-offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 8px 12px 7px 11px;
+}
+
+.blue-haven__stars {
+  margin-bottom: 5px;
+}
+
+.blue-haven__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.blue-haven__about {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.blue-haven__room {
+  margin-bottom: 37px;
+}
+
+.blue-haven__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 11px;
+}
+
+.blue-haven__text:last-child {
+  margin-bottom: 0;
+}
+
+.blue-haven__description {
+  margin-left: 14px;
+}
+
+.blue-haven__crossed-out {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.blue-haven__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blue-haven__price-tag {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .belle-mare {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: belle-mare;
-  width: 350px;
-  height: 500px;
+  max-width: 350px;
+  max-height: 500px;
   border: 1px solid red;
 }
 
@@ -865,8 +988,8 @@ template {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: white-palace;
-  width: 350px;
-  height: 500px;
+  max-width: 350px;
+  max-height: 500px;
   border: 1px solid red;
 }
 
@@ -874,8 +997,8 @@ template {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: luxury-place;
-  width: 350px;
-  height: 500px;
+  max-width: 350px;
+  max-height: 500px;
   border: 1px solid red;
 }
 
@@ -883,8 +1006,8 @@ template {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: five-star;
-  width: 350px;
-  height: 500px;
+  max-width: 350px;
+  max-height: 500px;
   border: 1px solid red;
 }
 

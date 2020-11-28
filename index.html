@@ -6,7 +6,7 @@
     <title>Best Tour Plan – Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -264,8 +264,57 @@
     <section class="packages">
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
-        <div class="packages-wrapper">
-          <div class="blue-haven"></div>
+        <div class="packages-grid">
+          <div class="blue-haven">
+            <div class="case-image blue-haven__case-image">
+              <img
+                class="blue-haven__image"
+                src="img/packages/blue-haven-image.jpg"
+                alt="Hotel Blue Haven"
+              />
+              <span class="blue-haven__flash-offer">Flash Offer</span>
+            </div>
+            <!-- /.case-image -->
+            <div class="case-content blue-haven__case-content">
+              <div class="blue-haven__stars">
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+                <img src="img/star.svg" alt="Star" />
+              </div>
+              <!-- /.blue-haven__stars -->
+              <h3 class="blue-haven__title">Hotel Blue Haven</h3>
+              <p class="blue-haven__about">
+                Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum
+                magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in
+                onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim
+                laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+              </p>
+              <div class="blue-haven__room">
+                <div class="blue-haven__text">
+                  <img class="blue-haven__icon" src="img/map-pin.svg" alt="Icon: Map Pin" />
+                  <span class="blue-haven__description">1749 Wheeler Ridge Delaware</span>
+                </div>
+                <div class="blue-haven__text">
+                  <img class="blue-haven__icon" src="img/user.svg" alt="Icon: User" />
+                  <span class="blue-haven__description">2 x Guests</span>
+                </div>
+                <div class="blue-haven__text">
+                  <img class="blue-haven__icon" src="img/home.svg" alt="Icon: Home" />
+                  <span class="blue-haven__description">1 x Room</span>
+                </div>
+              </div>
+              <!-- /.blue-haven__room -->
+              <span class="blue-haven__crossed-out">$ 10,500</span>
+              <div class="blue-haven__price">
+                <strong class="blue-haven__price-tag">$ 8,500</strong>
+                <button class="packages__button">Book Now</button>
+              </div>
+              <!-- /.blue-haven__price -->
+            </div>
+            <!-- /.case-content -->
+          </div>
           <!-- /.blue-haven -->
           <div class="belle-mare"></div>
           <!-- /.belle-mare -->
@@ -276,7 +325,7 @@
           <div class="five-star"></div>
           <!-- /.five-star -->
         </div>
-        <!-- /.packages-wrapper -->
+        <!-- /.packages-grid -->
       </div>
       <!-- /.container -->
     </section>

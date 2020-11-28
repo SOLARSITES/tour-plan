@@ -8,7 +8,7 @@
     text-transform: uppercase
     margin-top: 0
     margin-bottom: 65px
-  &-wrapper
+  &-grid
     display: grid
     grid-template-rows: repeat(2, 500px)
     grid-template-columns: repeat(3, 350px)
@@ -16,28 +16,102 @@
     column-gap: 30px
     grid-template-areas: "blue-haven blue-haven belle-mare" "white-palace luxury-place five-star"
     border: 1px solid red
+  &__button
+    color: $light
+    font-family: "Nunito", sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    padding: 11px 27px 10px 26px
+    background-color: $primary
+    border: none
+    border-radius: 4px
+    cursor: pointer
+.case-image
+  position: relative
+.case-content
+  display: flex
+  flex-direction: column
+  color: $light
+  background-color: $dark
+  max-width: 364px
+  padding: 46px 21px 30px 43px
 .blue-haven
   grid-area: blue-haven
-  width: 730px
-  height: 500px
-  border: 1px solid red
+  display: flex
+  max-width: 730px
+  &__image
+    width: 366px
+    height: 500px
+    object-fit: cover
+  &__flash-offer
+    position: absolute
+    left: 0
+    top: 26px
+    color: $light
+    background-color: $primary
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    padding: 8px 12px 7px 11px
+  &__stars
+    margin-bottom: 5px
+  &__title
+    font-weight: 700
+    font-size: 18px
+    line-height: 23px
+    margin-top: 0
+    margin-bottom: 27px
+  &__about
+    font-weight: 400
+    font-size: 14px
+    line-height: 160.6%
+    margin-top: 0
+    margin-bottom: 34px
+  &__room
+    margin-bottom: 37px
+  &__text
+    display: flex
+    align-items: center
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 11px
+    &:last-child
+      margin-bottom: 0
+  &__description
+    margin-left: 14px
+  &__crossed-out
+    font-weight: 400
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+  &__price
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__price-tag
+    font-weight: 700
+    font-size: 24px
+    line-height: 30px
 .belle-mare
   grid-area: belle-mare
-  width: 350px
-  height: 500px
+  max-width: 350px
+  max-height: 500px
   border: 1px solid red
 .white-palace
   grid-area: white-palace
-  width: 350px
-  height: 500px
+  max-width: 350px
+  max-height: 500px
   border: 1px solid red
 .luxury-place
   grid-area: luxury-place
-  width: 350px
-  height: 500px
+  max-width: 350px
+  max-height: 500px
   border: 1px solid red
 .five-star
   grid-area: five-star
-  width: 350px
-  height: 500px
+  max-width: 350px
+  max-height: 500px
   border: 1px solid red
