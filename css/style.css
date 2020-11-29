@@ -831,10 +831,10 @@ template {
 .packages-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (500px)[2];
-      grid-template-rows: repeat(2, 500px);
-  -ms-grid-columns: (350px)[3];
-      grid-template-columns: repeat(3, 350px);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   row-gap: 30px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
@@ -870,11 +870,13 @@ template {
 
 .blue-haven__case-image {
   position: relative;
+  width: 366px;
+  height: 500px;
 }
 
 .blue-haven__image {
-  width: 366px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -981,354 +983,30 @@ template {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: belle-mare;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 350px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.belle-mare__case-image {
-  position: relative;
-  width: 350px;
-  height: 250px;
-}
-
-.belle-mare__image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.belle-mare__flash-offer {
-  position: absolute;
-  left: 0;
-  top: 26px;
-  color: #ffffff;
-  background-color: #EC1F46;
-  font-weight: 600;
-  font-size: 8px;
-  line-height: 10px;
-  padding: 4px 9px;
-  border-radius: 0px 4px 4px 0;
-}
-
-.belle-mare__case-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #ffffff;
-  background-color: #0A223D;
-  max-width: 350px;
-  height: 250px;
-  padding: 30px 21px 25px 32px;
-}
-
-.belle-mare__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
-  margin-top: 0;
-  margin-bottom: 23px;
-}
-
-.belle-mare__room {
-  margin-bottom: 24px;
-}
-
-.belle-mare__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  margin-bottom: 11px;
-}
-
-.belle-mare__text:last-child {
-  margin-bottom: 0;
-}
-
-.belle-mare__description {
-  margin-left: 14px;
-}
-
-.belle-mare__crossed-out {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-}
-
-.belle-mare__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.belle-mare__price-tag {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .white-palace {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: white-palace;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 350px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.white-palace__case-image {
-  position: relative;
-  width: 350px;
-  height: 250px;
-}
-
-.white-palace__image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.white-palace__flash-offer {
-  position: absolute;
-  left: 0;
-  top: 26px;
-  color: #ffffff;
-  background-color: #EC1F46;
-  font-weight: 600;
-  font-size: 8px;
-  line-height: 10px;
-  padding: 4px 9px;
-  border-radius: 0px 4px 4px 0;
-}
-
-.white-palace__case-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #ffffff;
-  background-color: #0A223D;
-  max-width: 350px;
-  height: 250px;
-  padding: 30px 21px 25px 32px;
-}
-
-.white-palace__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
-  margin-top: 0;
-  margin-bottom: 23px;
-}
-
-.white-palace__room {
-  margin-bottom: 24px;
-}
-
-.white-palace__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  margin-bottom: 11px;
-}
-
-.white-palace__text:last-child {
-  margin-bottom: 0;
-}
-
-.white-palace__description {
-  margin-left: 14px;
-}
-
-.white-palace__crossed-out {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-}
-
-.white-palace__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.white-palace__price-tag {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .luxury-place {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: luxury-place;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 350px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.luxury-place__case-image {
-  position: relative;
-  width: 350px;
-  height: 250px;
-}
-
-.luxury-place__image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.luxury-place__flash-offer {
-  position: absolute;
-  left: 0;
-  top: 26px;
-  color: #ffffff;
-  background-color: #EC1F46;
-  font-weight: 600;
-  font-size: 8px;
-  line-height: 10px;
-  padding: 4px 9px;
-  border-radius: 0px 4px 4px 0;
-}
-
-.luxury-place__case-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #ffffff;
-  background-color: #0A223D;
-  max-width: 350px;
-  height: 250px;
-  padding: 30px 21px 25px 32px;
-}
-
-.luxury-place__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
-  margin-top: 0;
-  margin-bottom: 23px;
-}
-
-.luxury-place__room {
-  margin-bottom: 24px;
-}
-
-.luxury-place__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  margin-bottom: 11px;
-}
-
-.luxury-place__text:last-child {
-  margin-bottom: 0;
-}
-
-.luxury-place__description {
-  margin-left: 14px;
-}
-
-.luxury-place__crossed-out {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-}
-
-.luxury-place__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.luxury-place__price-tag {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .five-star {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: five-star;
+}
+
+.belle-mare,
+.white-palace,
+.luxury-place,
+.five-star {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1341,12 +1019,18 @@ template {
   overflow: hidden;
 }
 
+.belle-mare__case-image,
+.white-palace__case-image,
+.luxury-place__case-image,
 .five-star__case-image {
   position: relative;
   width: 350px;
   height: 250px;
 }
 
+.belle-mare__image,
+.white-palace__image,
+.luxury-place__image,
 .five-star__image {
   width: 100%;
   height: 100%;
@@ -1354,6 +1038,9 @@ template {
      object-fit: cover;
 }
 
+.belle-mare__flash-offer,
+.white-palace__flash-offer,
+.luxury-place__flash-offer,
 .five-star__flash-offer {
   position: absolute;
   left: 0;
@@ -1367,6 +1054,9 @@ template {
   border-radius: 0px 4px 4px 0;
 }
 
+.belle-mare__case-content,
+.white-palace__case-content,
+.luxury-place__case-content,
 .five-star__case-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1382,6 +1072,9 @@ template {
   padding: 30px 21px 25px 32px;
 }
 
+.belle-mare__title,
+.white-palace__title,
+.luxury-place__title,
 .five-star__title {
   font-weight: 700;
   font-size: 18px;
@@ -1390,10 +1083,16 @@ template {
   margin-bottom: 23px;
 }
 
+.belle-mare__room,
+.white-palace__room,
+.luxury-place__room,
 .five-star__room {
   margin-bottom: 24px;
 }
 
+.belle-mare__text,
+.white-palace__text,
+.luxury-place__text,
 .five-star__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1407,14 +1106,23 @@ template {
   margin-bottom: 11px;
 }
 
+.belle-mare__text:last-child,
+.white-palace__text:last-child,
+.luxury-place__text:last-child,
 .five-star__text:last-child {
   margin-bottom: 0;
 }
 
+.belle-mare__description,
+.white-palace__description,
+.luxury-place__description,
 .five-star__description {
   margin-left: 14px;
 }
 
+.belle-mare__crossed-out,
+.white-palace__crossed-out,
+.luxury-place__crossed-out,
 .five-star__crossed-out {
   font-weight: 400;
   font-size: 14px;
@@ -1423,6 +1131,9 @@ template {
           text-decoration-line: line-through;
 }
 
+.belle-mare__price,
+.white-palace__price,
+.luxury-place__price,
 .five-star__price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1435,6 +1146,9 @@ template {
           justify-content: space-between;
 }
 
+.belle-mare__price-tag,
+.white-palace__price-tag,
+.luxury-place__price-tag,
 .five-star__price-tag {
   font-weight: 700;
   font-size: 24px;

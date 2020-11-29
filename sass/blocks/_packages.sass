@@ -10,8 +10,8 @@
     margin-bottom: 65px
   &-grid
     display: grid
-    grid-template-rows: repeat(2, 500px)
-    grid-template-columns: repeat(3, 350px)
+    grid-template-rows: repeat(2, 1fr)
+    grid-template-columns: repeat(3, 1fr)
     row-gap: 30px
     column-gap: 30px
     grid-template-areas: "blue-haven blue-haven belle-mare" "white-palace luxury-place five-star"
@@ -35,9 +35,11 @@
   overflow: hidden
   &__case-image
     position: relative
-  &__image
     width: 366px
     height: 500px
+  &__image
+    width: 100%
+    height: 100%
     object-fit: cover
   &__flash-offer
     position: absolute
@@ -99,204 +101,16 @@
     line-height: 30px
 .belle-mare
   grid-area: belle-mare
-  display: flex
-  flex-direction: column
-  max-width: 350px
-  border-radius: 8px
-  overflow: hidden
-  &__case-image
-    position: relative
-    width: 350px
-    height: 250px
-  &__image
-    width: 100%
-    height: 100%
-    object-fit: cover
-  &__flash-offer
-    position: absolute
-    left: 0
-    top: 26px
-    color: $light
-    background-color: $primary
-    font-weight: 600
-    font-size: 8px
-    line-height: 10px
-    padding: 4px 9px
-    border-radius: 0px 4px 4px 0
-  &__case-content
-    display: flex
-    flex-direction: column
-    color: $light
-    background-color: $dark
-    max-width: 350px
-    height: 250px
-    padding: 30px 21px 25px 32px
-  &__title
-    font-weight: 700
-    font-size: 18px
-    line-height: 23px
-    margin-top: 0
-    margin-bottom: 23px
-  &__room
-    margin-bottom: 24px
-  &__text
-    display: flex
-    align-items: center
-    font-weight: 400
-    font-size: 12px
-    line-height: 15px
-    margin-bottom: 11px
-    &:last-child
-      margin-bottom: 0
-  &__description
-    margin-left: 14px
-  &__crossed-out
-    font-weight: 400
-    font-size: 14px
-    line-height: 18px
-    text-decoration-line: line-through
-  &__price
-    display: flex
-    align-items: center
-    justify-content: space-between
-  &__price-tag
-    font-weight: 700
-    font-size: 24px
-    line-height: 30px
 .white-palace
   grid-area: white-palace
-  display: flex
-  flex-direction: column
-  max-width: 350px
-  border-radius: 8px
-  overflow: hidden
-  &__case-image
-    position: relative
-    width: 350px
-    height: 250px
-  &__image
-    width: 100%
-    height: 100%
-    object-fit: cover
-  &__flash-offer
-    position: absolute
-    left: 0
-    top: 26px
-    color: $light
-    background-color: $primary
-    font-weight: 600
-    font-size: 8px
-    line-height: 10px
-    padding: 4px 9px
-    border-radius: 0px 4px 4px 0
-  &__case-content
-    display: flex
-    flex-direction: column
-    color: $light
-    background-color: $dark
-    max-width: 350px
-    height: 250px
-    padding: 30px 21px 25px 32px
-  &__title
-    font-weight: 700
-    font-size: 18px
-    line-height: 23px
-    margin-top: 0
-    margin-bottom: 23px
-  &__room
-    margin-bottom: 24px
-  &__text
-    display: flex
-    align-items: center
-    font-weight: 400
-    font-size: 12px
-    line-height: 15px
-    margin-bottom: 11px
-    &:last-child
-      margin-bottom: 0
-  &__description
-    margin-left: 14px
-  &__crossed-out
-    font-weight: 400
-    font-size: 14px
-    line-height: 18px
-    text-decoration-line: line-through
-  &__price
-    display: flex
-    align-items: center
-    justify-content: space-between
-  &__price-tag
-    font-weight: 700
-    font-size: 24px
-    line-height: 30px
 .luxury-place
   grid-area: luxury-place
-  display: flex
-  flex-direction: column
-  max-width: 350px
-  border-radius: 8px
-  overflow: hidden
-  &__case-image
-    position: relative
-    width: 350px
-    height: 250px
-  &__image
-    width: 100%
-    height: 100%
-    object-fit: cover
-  &__flash-offer
-    position: absolute
-    left: 0
-    top: 26px
-    color: $light
-    background-color: $primary
-    font-weight: 600
-    font-size: 8px
-    line-height: 10px
-    padding: 4px 9px
-    border-radius: 0px 4px 4px 0
-  &__case-content
-    display: flex
-    flex-direction: column
-    color: $light
-    background-color: $dark
-    max-width: 350px
-    height: 250px
-    padding: 30px 21px 25px 32px
-  &__title
-    font-weight: 700
-    font-size: 18px
-    line-height: 23px
-    margin-top: 0
-    margin-bottom: 23px
-  &__room
-    margin-bottom: 24px
-  &__text
-    display: flex
-    align-items: center
-    font-weight: 400
-    font-size: 12px
-    line-height: 15px
-    margin-bottom: 11px
-    &:last-child
-      margin-bottom: 0
-  &__description
-    margin-left: 14px
-  &__crossed-out
-    font-weight: 400
-    font-size: 14px
-    line-height: 18px
-    text-decoration-line: line-through
-  &__price
-    display: flex
-    align-items: center
-    justify-content: space-between
-  &__price-tag
-    font-weight: 700
-    font-size: 24px
-    line-height: 30px
 .five-star
   grid-area: five-star
+.belle-mare,
+.white-palace,
+.luxury-place,
+.five-star
   display: flex
   flex-direction: column
   max-width: 350px
