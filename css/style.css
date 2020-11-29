@@ -1595,6 +1595,14 @@ template {
     width: 339px;
     height: 255px;
   }
+  .packages {
+    padding: 27px 0 60px;
+  }
+  .packages__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 54px;
+  }
   .packages-grid {
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
@@ -1763,6 +1771,34 @@ template {
   .card {
     width: 48%;
     height: 255px;
+  }
+  .packages-grid {
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .packages__button {
+    padding: 9px 25px 8px 24px;
+  }
+  .blue-haven__case-content {
+    max-width: 288px;
+    padding: 39px 22px 24px 32px;
+  }
+  .blue-haven__title {
+    margin-bottom: 27px;
+  }
+  .blue-haven__about {
+    font-size: 13px;
+    margin-bottom: 34px;
+  }
+  .blue-haven__room {
+    margin-bottom: 37px;
+  }
+  .belle-mare__case-content,
+  .white-palace__case-content,
+  .luxury-place__case-content,
+  .five-star__case-content {
+    padding: 30px 21px 25px 28px;
   }
 }
 
