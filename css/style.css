@@ -1492,6 +1492,24 @@ template {
     width: 230px;
     height: 230px;
   }
+  .packages-grid {
+    row-gap: 25px;
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+  }
+  .blue-haven__case-content {
+    max-width: 314px;
+    padding: 35px 21px 24px 35px;
+  }
+  .blue-haven__title {
+    margin-bottom: 25px;
+  }
+  .blue-haven__about {
+    margin-bottom: 30px;
+  }
+  .blue-haven__room {
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1576,6 +1594,29 @@ template {
   .card {
     width: 339px;
     height: 255px;
+  }
+  .packages-grid {
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    row-gap: 22px;
+    -webkit-column-gap: 22px;
+            column-gap: 22px;
+        grid-template-areas: "blue-haven blue-haven" "belle-mare white-palace" "luxury-place five-star";
+  }
+  .blue-haven__case-content {
+    max-width: 364px;
+    padding: 42px 21px 30px 43px;
+  }
+  .blue-haven__title {
+    margin-bottom: 27px;
+  }
+  .blue-haven__about {
+    margin-bottom: 34px;
+  }
+  .blue-haven__room {
+    margin-bottom: 37px;
   }
 }
 

@@ -11,6 +11,20 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-grid
+      row-gap: 25px
+      column-gap: 25px
+  .blue-haven
+    &__case-content
+      max-width: 314px
+      padding: 35px 21px 24px 35px
+    &__title
+      margin-bottom: 25px
+    &__about
+      margin-bottom: 30px
+    &__room
+      margin-bottom: 32px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -69,6 +83,23 @@
   .card
     width: 339px
     height: 255px
+  .packages
+    &-grid
+      grid-template-rows: repeat(3, 1fr)
+      grid-template-columns: repeat(2, 1fr)
+      row-gap: 22px
+      column-gap: 22px
+      grid-template-areas: "blue-haven blue-haven" "belle-mare white-palace" "luxury-place five-star"
+  .blue-haven
+    &__case-content
+      max-width: 364px
+      padding: 42px 21px 30px 43px
+    &__title
+      margin-bottom: 27px
+    &__about
+      margin-bottom: 34px
+    &__room
+      margin-bottom: 37px
 @media (max-width: 768px)
   .container
     max-width: 576px
