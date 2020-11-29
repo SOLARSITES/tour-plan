@@ -197,27 +197,36 @@
     height: 255px
   .packages
     &-grid
+      grid-template-rows: repeat(5, auto)
+      grid-template-columns: repeat(1, auto)
       row-gap: 20px
       column-gap: 20px
+      grid-template-areas: "blue-haven" "belle-mare" "white-palace" "luxury-place" "five-star"
     &__button
       padding: 9px 25px 8px 24px
   .blue-haven
+    flex-direction: column
+    max-width: 100%
+    &__case-image
+      height: 350px
     &__case-content
-      max-width: 288px
-      padding: 39px 22px 24px 32px
+      max-width: 100%
+      padding: 25px 34px 30px 34px
     &__title
-      margin-bottom: 27px
+      margin-bottom: 20px
     &__about
       font-size: 13px
-      margin-bottom: 34px
+      margin-bottom: 25px
     &__room
-      margin-bottom: 37px
+      margin-bottom: 27px
   .belle-mare,
   .white-palace,
   .luxury-place,
   .five-star
+    max-width: 100%
     &__case-content
-      padding: 30px 21px 25px 28px
+      max-width: 100%
+      padding: 29px 34px 25px 34px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -259,6 +268,11 @@
       margin-bottom: 46px
   .card
     width: 100%
+  .packages
+    &__title
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 45px
 @media (max-width: 320px)
   .hotel
     padding: 5px 0 40px
@@ -285,3 +299,20 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 36px
+  .packages
+    &__title
+      font-size: 21px
+      line-height: 26px
+      margin-bottom: 40px
+  .blue-haven
+    &__case-image
+      height: 300px
+    &__case-content
+      padding: 25px 22px 30px 22px
+  .belle-mare,
+  .white-palace,
+  .luxury-place,
+  .five-star
+    &__case-content
+      max-width: 100%
+      padding: 29px 22px 25px 22px
