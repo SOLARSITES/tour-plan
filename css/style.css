@@ -1475,6 +1475,47 @@ template {
   cursor: pointer;
 }
 
+.footer {
+  color: #ffffff;
+  background-color: #0A223D;
+  padding: 108px 0 46px;
+}
+
+.footer-wrapper {
+  border: 1px solid red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(250px, 1fr));
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.footer__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__item {
+  color: #BDBDBD;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.footer__link {
+  color: inherit;
+  text-decoration: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
