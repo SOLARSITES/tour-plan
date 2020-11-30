@@ -3,16 +3,39 @@
   background-color: $dark
   padding: 108px 0 46px
   &-wrapper
-    border: 1px solid red
     display: grid
-    grid-template-columns: repeat(4, minmax(250px, 1fr))
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-auto-rows: minmax(40px, min-content)
+    align-items: start
+    grid-gap: 20px
+  &__logo
+    grid-row: 1 / 3
+    width: 166px
+    margin-top: 31px
+  &__categories
+    grid-row: 1 / 4
+  &__social
+    &-network
+      display: flex
+      align-items: start
+      grid-row: 2 / 4
+      grid-column: span 2
+    &-links
+      display: flex
+      align-items: center
+      justify-content: space-between
+      min-width: 83px
+  &__contact-details
+    grid-column: span 2
   &__title
     font-weight: 700
     font-size: 18px
     line-height: 23px
     text-transform: uppercase
-    margin: 0
+    margin-top: 0
     margin-bottom: 16px
+    &--inline
+      margin: 0 43px 0 0
   &__ul
     margin: 0
     padding: 0
