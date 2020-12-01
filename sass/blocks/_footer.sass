@@ -2,7 +2,7 @@
   color: $light
   background-color: $dark
   padding: 108px 0 46px
-  &-wrapper
+  &-grid
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-auto-rows: minmax(40px, min-content)
@@ -25,6 +25,8 @@
       align-items: center
       justify-content: space-between
       min-width: 83px
+  &__legal
+    justify-self: center
   &__contact
     &-details
       grid-column: span 2
@@ -35,6 +37,7 @@
     flex-wrap: wrap
     align-items: center
     justify-content: space-between
+    max-width: 539px
   &__title
     font-weight: 700
     font-size: 18px
@@ -78,6 +81,7 @@
     border-radius: 4px
     border: none
     padding: 0 23px
+    max-width: 255px
     height: 50px
     margin-bottom: 15px
   &__message
@@ -85,6 +89,8 @@
     background-color: #ffffff
     border-radius: 4px
     border: none
+    resize: none
+    height: 123px
     padding: 18px 23px
     margin-bottom: 23px
   &__button
