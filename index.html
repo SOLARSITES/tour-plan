@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan – Hotel Booking</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
@@ -504,8 +504,13 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form class="subscribe newsletter__subscribe" action="#">
-          <input class="subscribe__input" type="text" placeholder="Your E-mail Address" />
+        <form class="subscribe newsletter__subscribe" action="send.php" method="POST">
+          <input
+            class="subscribe__input"
+            type="text"
+            placeholder="Your E-mail Address"
+            name="message"
+          />
           <button class="subscribe__button">Send</button>
         </form>
       </div>

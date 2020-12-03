@@ -28,12 +28,12 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'glo.mail@yandex.ru'; // Логин на почте
-    $mail->Password   = 'ogeynktwfwexuweu'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'revelatio@gmail.com'; // Логин на почте
+    $mail->Password   = 'diamfadwekupztma'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('glo.mail@yandex.ru', 'GLO Mail'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('revelatio@gmail.com', 'Revelatio'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('glo.php.mail@ex.ua');
@@ -54,3 +54,6 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
+
+// Отображение результата для случая дебага
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
