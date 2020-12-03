@@ -1202,6 +1202,7 @@ template {
   border: none;
   color: #ffffff;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1720,6 +1721,7 @@ template {
   padding: 18px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
@@ -1727,6 +1729,21 @@ template {
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
+}
+
+@media (min-width: 992px) {
+  a:hover {
+    text-decoration: underline;
+  }
+  button:hover {
+    background-color: #FF4040;
+  }
+  .hotel-slider__button--prev:hover, .hotel-slider__button--next:hover {
+    background-color: transparent;
+  }
+  .reviews-slider__button--prev:hover, .reviews-slider__button--next:hover {
+    background-color: transparent;
+  }
 }
 
 @media (max-width: 1200px) {
