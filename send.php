@@ -24,13 +24,13 @@ try {
     $mail->isSMTP();
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'glo.mail@yandex.ru'; // Логин на почте
-    $mail->Password   = 'ychpiditrluwggsm'; // Пароль на почте
+    $mail->Password   = 'ogeynktwfwexuweu'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('glo.mail@yandex.ru', 'GLO Mail'); // Адрес самой почты и имя отправителя
@@ -53,4 +53,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thankyou.html');
