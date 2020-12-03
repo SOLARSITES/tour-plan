@@ -40,7 +40,7 @@ $(window).scroll(function () {
   });
 });
 
-var menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener("click", function () {
-  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
-});
+const menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", () =>
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible")
+);

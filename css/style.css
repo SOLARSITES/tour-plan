@@ -1975,7 +1975,7 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__mobile--fixed {
+  .navbar__mobile {
     position: fixed;
     left: 0;
     top: 0;
@@ -2047,6 +2047,9 @@ template {
     border: none;
     background-color: #ffffff;
     cursor: pointer;
+  }
+  .menu-button:focus {
+    outline: none;
   }
   .menu-button__line {
     width: 16px;
