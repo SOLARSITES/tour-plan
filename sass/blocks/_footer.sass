@@ -57,6 +57,40 @@
       grid-column: span 2
     &-form
       grid-column: span 2
+    &-list
+      margin: 0
+      padding: 0
+      list-style: none
+    &-data
+      display: flex
+      align-items: flex-start
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+    &-address
+      color: $footer
+      font-weight: 400
+      font-size: 14px
+      line-height: 160%
+    &-phone
+      display: block
+      color: $footer
+      font-weight: 400
+      font-size: 14px
+      line-height: 160%
+    &-link
+      color: $footer
+      font-weight: 400
+      font-size: 14px
+      line-height: 160%
+      text-decoration: none
+  &__icon
+    &-wrapper
+      display: flex
+      align-items: flex-start
+      min-width: 40px
+      min-height: 19px
+      margin-top: 4px
   &__form
     display: flex
     flex-wrap: wrap
@@ -72,12 +106,18 @@
     margin-bottom: 16px
     &--inline
       margin: 0 43px 0 0
-    &--mb-3
+    &--mb-1
+      margin-top: 13px
+      margin-bottom: 27px
+    &--mb-2
       margin-bottom: 34px
   &__text
     color: $footer
+    font-weight: 400
+    font-size: 14px
+    line-height: 160%
     margin-top: 0
-    margin-bottom: 22px
+    margin-bottom: 25px
   &__ul
     margin: 0
     padding: 0
@@ -89,14 +129,6 @@
     font-weight: 400
     font-size: 14px
     line-height: 160%
-    &--mb-2
-      margin-bottom: 20px
-  &__icon
-    &-wrapper
-      display: flex
-      align-items: flex-end
-      min-width: 40px
-      min-height: 19px
   &__link
     color: inherit
     text-decoration: none
