@@ -717,6 +717,7 @@ template {
   min-height: 45px;
   padding-top: 2px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .rating__text {
@@ -1754,6 +1755,17 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
@@ -1768,6 +1780,17 @@ template {
   background-color: #0A223D;
   border-radius: 8px;
   z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {
@@ -1825,6 +1848,9 @@ template {
   }
   .modal__close:hover {
     background-color: transparent;
+  }
+  .rating:hover {
+    background-color: #FF4040;
   }
 }
 
