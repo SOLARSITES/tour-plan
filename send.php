@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$newsletter_email = $_POST['newsletter_email'];
 
 // Формирование самого письма
 $title = "Новое обращение с сайта Best Tour Plan";
@@ -17,6 +18,15 @@ $body = "
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
+
+// Формирование письма для блока NEWSLETTER
+if ($newsletter_email) {
+$title = "Подписка на новости сайта Best Tour Plan";
+$body = "
+<h2>Подписка на новости</h2>
+<b>E-mail:</b> $newsletter_email<br>
+";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -54,6 +64,11 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
+
+// Отображение результата для блока NEWSLETTER
+if ($newsletter_email) {
+header('Location: subscribed.html');
+}
 
 // Отображение результата для случая дебага
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);

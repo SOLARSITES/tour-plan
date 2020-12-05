@@ -1266,7 +1266,7 @@ template {
 
 .reviews__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
@@ -1920,15 +1920,18 @@ template {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .navbar-bottom__container {
+    width: 673px;
+  }
   .navbar-menu {
     padding: 22px 0;
   }
   .navbar-menu__link {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 15px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 49px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1985,6 +1988,9 @@ template {
   .card {
     width: 339px;
     height: 255px;
+  }
+  .card__title {
+    max-width: 200px;
   }
   .packages {
     padding: 27px 0 60px;
