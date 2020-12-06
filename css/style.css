@@ -699,6 +699,26 @@ template {
   background-image: url(../img/arrow-next.svg);
 }
 
+.hotel__comeback {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #EC1F46;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  min-width: 160px;
+  min-height: 50px;
+  border-radius: 4px;
+  padding: 18px;
+  margin-top: 45px;
+  margin-bottom: -20px;
+  text-decoration: none;
+}
+
+.hotel__comeback:hover {
+  text-decoration: none;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1856,6 +1876,9 @@ template {
   .rating:hover {
     background-color: #FF4040;
   }
+  .hotel__comeback:hover {
+    background-color: #FF4040;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2110,6 +2133,9 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .navbar__search {
+    margin-left: 0;
   }
   .navbar__search--mobile--visible {
     max-width: 340px;
