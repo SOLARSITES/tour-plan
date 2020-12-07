@@ -7,9 +7,10 @@ body
   background-color: $secondary
 img
   max-width: 100%
-button
-  &:focus
-    outline: none
+button, input, textarea
+  &:active, &:hover, &:focus
+    outline: 0
+    outline-offset: 0
 .container
   max-width: 1110px
   margin: auto
@@ -19,9 +20,10 @@ button
   align-items: center
   justify-content: space-between
 .input
-  font-weight: 400
-  font-size: 12px
-  line-height: 15px
+  color: $gray
+  font-weight: 300
+  font-size: 14px
+  line-height: 18px
   background-color: #ffffff
   border-radius: 4px
   border: none
@@ -48,3 +50,8 @@ button
   border: none
   border-radius: 4px
   cursor: pointer
+.invalid
+  color: $primary
+  font-weight: 400
+  font-size: 12px
+  line-height: 15px

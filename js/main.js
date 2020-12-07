@@ -70,4 +70,37 @@ $(document).ready(function () {
       closeModal(e);
     }
   });
+
+  //Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        phone: {
+          required: true,
+          minlength: 17,
+        },
+      },
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Your Name must be at least 2 letters long",
+        },
+        phone: {
+          required: "Please specify your phone number",
+          minlength: "Your phone number must be in the format of +7 (xxx) xxx-xx-xx",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        newsletter_email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });
+
+  $(`[type="tel"]`).mask("+7(000)-000-00-00");
 });

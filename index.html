@@ -536,22 +536,27 @@
     </section>
     <section class="newsletter">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
-          subscribe to our
-          <span class="newsletter-title__strong">Newsletter</span>
-        </h2>
-        <form class="subscribe newsletter__subscribe" action="send.php" method="POST">
-          <input
-            class="subscribe__input"
-            type="text"
-            placeholder="Your E-mail Address"
-            name="newsletter_email"
-          />
-          <button class="subscribe__button">Send</button>
+        <div class="newsletter__title-group">
+          <h2 class="newsletter-title newsletter__title">
+            subscribe to our <span class="newsletter-title__strong">Newsletter</span>
+          </h2>
+        </div>
+        <form action="send.php" method="POST" class="form subscribe">
+          <div class="subscribe__group">
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Your email address"
+              name="email"
+              required
+            />
+          </div>
+          <button class="subscribe__button insubscribe">Send</button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
     </section>
+    <!-- /.newsletter -->
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">What people think about&nbsp;us</h2>
@@ -887,18 +892,27 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-2">Send us a message</h3>
             <form class="form footer__form" action="send.php" method="POST">
-              <input
-                class="input footer__input"
-                type="text"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                class="input footer__input"
-                type="text"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-group">
+                <input
+                  class="input footer__input"
+                  type="text"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <!-- /.footer__input-group -->
+              <div class="footer__input-group">
+                <input
+                  class="input footer__input"
+                  type="tel"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
+              <!-- /.footer__input-group -->
               <textarea
                 class="message footer__message"
                 placeholder="Message"
@@ -947,14 +961,23 @@
             type="text"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
           <input
             class="input modal__input"
-            type="text"
+            type="tel"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
-          <input class="input modal__input" type="text" placeholder="Email*" name="email" />
+          <input
+            class="input modal__input"
+            type="email"
+            placeholder="Email*"
+            name="email"
+            required
+          />
           <textarea
             class="message modal__message"
             placeholder="Your Feedback"
@@ -981,14 +1004,23 @@
             type="text"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
           <input
             class="input modal__input"
-            type="text"
+            type="tel"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
-          <input class="input modal__input" type="text" placeholder="Email*" name="email" />
+          <input
+            class="input modal__input"
+            type="email"
+            placeholder="Email*"
+            name="email"
+            required
+          />
           <textarea
             class="message modal__message"
             placeholder="Your Booking"
@@ -1001,9 +1033,11 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/bgscroll.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

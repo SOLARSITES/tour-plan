@@ -59,8 +59,9 @@
     &-bottom
       max-width: 633px
     &__input
-      flex-basis: 100%
-      max-width: 100%
+      &-group
+        flex-basis: 100%
+        max-width: 100%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -155,7 +156,8 @@
       max-width: 100%
       margin: auto
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -358,7 +360,8 @@
     &__logo
       width: 104px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
   .modal
     &__dialog
       min-width: 96%
@@ -529,8 +532,11 @@
     &__dialog
       min-width: 100%
       padding: 33px 13px
+    &__message
+      margin-bottom: 14px
     &__button
       order: 1
+      margin-top: 0
     &__info
       flex-basis: 100%
       margin-bottom: 14px
