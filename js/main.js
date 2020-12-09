@@ -105,4 +105,8 @@ $(document).ready(function () {
   $(`[type="tel"]`).mask("+7(000)-000-00-00");
 
   AOS.init();
+
+  $(document).on("scroll", function () {
+    $("#map").addClass("map--active");
+  });
 });
