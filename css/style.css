@@ -1804,6 +1804,9 @@ template {
   .container {
     max-width: 700px;
   }
+  .newsletter {
+    padding: 82px 0 63px 0;
+  }
   .newsletter-wrapper {
     max-width: 700px;
   }
@@ -1821,10 +1824,10 @@ template {
     width: 673px;
   }
   .navbar-menu {
-    padding: 22px 0;
+    padding: 20px 0 22px;
   }
   .navbar-menu__link {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 15px;
   }
   .navbar__search {
@@ -1841,13 +1844,19 @@ template {
   }
   .hotel-features {
     flex-direction: row;
+    height: 210px;
   }
   .booking {
     width: 340px;
+    padding: 29px 22px 26px 22px;
+  }
+  .booking__button {
+    font-size: 13px;
+    padding: 10px 6px 10px 0;
   }
   .map {
     width: 340px;
-    height: 223px;
+    height: 211px;
   }
   .reviews {
     padding: 40px 0 60px;
@@ -1855,6 +1864,7 @@ template {
   .reviews__title {
     font-size: 30px;
     line-height: 38px;
+    letter-spacing: normal;
     margin-bottom: 50px;
   }
   .reviews-slider__item {
@@ -1867,8 +1877,11 @@ template {
   .reviews-slider__item::after {
     right: 25px;
   }
+  .reviews-slider__button {
+    top: 50%;
+  }
   .activities {
-    padding: 50px 0 60px;
+    padding: 60px 0 60px;
   }
   .activities-wrapper {
     flex-wrap: wrap;
@@ -1911,16 +1924,27 @@ template {
   .blue-haven__room {
     margin-bottom: 37px;
   }
+  .activities {
+    padding: 60px 0 50px;
+  }
   .footer {
-    padding: 90px 0 40px;
+    padding: 72px 0 40px;
   }
   .footer-grid {
     grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
+    margin-bottom: 57px;
   }
   .footer-bottom {
     max-width: 100%;
     margin: auto;
+  }
+  .footer-bottom__ul {
+    margin-left: 1px;
+  }
+  .footer__form {
+    margin-top: -1px;
+    margin-left: -5px;
   }
   .footer__input-group {
     flex-basis: 48%;
@@ -1929,28 +1953,55 @@ template {
     grid-row: 1 / 2;
     grid-column: span 2;
     margin-top: 0;
+    width: 96px;
   }
   .footer__title--mb-1 {
-    margin-top: 18px;
+    margin-top: 17px;
+  }
+  .footer__title--mb-2 {
+    margin-top: -2px;
+    margin-left: -6px;
+  }
+  .footer__text {
+    margin-left: -2px;
+    margin-bottom: 21px;
+  }
+  .footer__contact-list {
+    margin-left: 6px;
+  }
+  .footer__contact-data {
+    margin-bottom: 21px;
   }
   .footer__social-network {
     grid-row: 1 / 2;
     grid-column: span 4;
     align-self: center;
+    margin-top: 11px;
+    margin-left: -53px;
   }
   .footer__categories {
     grid-row: 2 / 3;
     grid-column: span 2;
+    margin-top: 8px;
+    margin-left: 1px;
   }
   .footer__legal {
     grid-column: span 2;
+    min-width: 200px;
+    margin-top: 8px;
+    margin-left: 18px;
   }
   .footer__additional {
     grid-column: span 2;
+    min-width: 250px;
+    margin-top: 8px;
+    margin-left: -39px;
   }
   .footer__contact-details {
     grid-row: 3;
     grid-column: span 5;
+    margin-top: 3px;
+    margin-left: 2px;
   }
   .footer__contact-form {
     grid-row: 4;
@@ -1964,7 +2015,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     padding-top: 78px;
   }
@@ -2079,6 +2130,9 @@ template {
   }
   .hotel__booking {
     margin-bottom: 30px;
+  }
+  .rating {
+    padding-top: 6px;
   }
   .booking {
     display: flex;

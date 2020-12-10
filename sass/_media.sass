@@ -66,6 +66,7 @@
   .container
     max-width: 700px
   .newsletter
+    padding: 82px 0 63px 0
     &-wrapper
       max-width: 700px
   .logo
@@ -81,9 +82,9 @@
       &__container
         width: 673px
     &-menu
-      padding: 22px 0
+      padding: 20px 0 22px
       &__link
-        font-size: 11px
+        font-size: 12px
         line-height: 15px
     &__search
       margin-left: 49px
@@ -96,16 +97,22 @@
       margin-bottom: 30px
     &-features
       flex-direction: row
+      height: 210px
   .booking
     width: 340px
+    padding: 29px 22px 26px 22px
+    &__button
+      font-size: 13px
+      padding: 10px 6px 10px 0
   .map
     width: 340px
-    height: 223px
+    height: 211px
   .reviews
     padding: 40px 0 60px
     &__title
       font-size: 30px
       line-height: 38px
+      letter-spacing: normal
       margin-bottom: 50px
     &-slider
       &__item
@@ -115,8 +122,10 @@
           left: 29px
         &::after
           right: 25px
+      &__button
+        top: 50%
   .activities
-    padding: 50px 0 60px
+    padding: 60px 0 60px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -148,14 +157,22 @@
       margin-bottom: 34px
     &__room
       margin-bottom: 37px
+  .activities
+    padding: 60px 0 50px
   .footer
-    padding: 90px 0 40px
+    padding: 72px 0 40px
     &-grid
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
+      margin-bottom: 57px
     &-bottom
       max-width: 100%
       margin: auto
+      &__ul
+        margin-left: 1px
+    &__form
+      margin-top: -1px
+      margin-left: -5px
     &__input
       &-group
         flex-basis: 48%
@@ -163,25 +180,49 @@
       grid-row: 1 / 2
       grid-column: span 2
       margin-top: 0
+      width: 96px
     &__title
       &--mb-1
-        margin-top: 18px
+        margin-top: 17px
+      &--mb-2
+        margin-top: -2px
+        margin-left: -6px
+    &__text
+      margin-left: -2px
+      margin-bottom: 21px
+    &__contact
+      &-list
+        margin-left: 6px
+      &-data
+        margin-bottom: 21px
     &__social
       &-network
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
+        margin-top: 11px
+        margin-left: -53px
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
+      margin-top: 8px
+      margin-left: 1px
     &__legal
       grid-column: span 2
+      min-width: 200px
+      margin-top: 8px
+      margin-left: 18px
     &__additional
       grid-column: span 2
+      min-width: 250px
+      margin-top: 8px
+      margin-left: -39px
     &__contact
       &-details
         grid-row: 3
         grid-column: span 5
+        margin-top: 3px
+        margin-left: 2px
       &-form
         grid-row: 4
         grid-column: span 5
@@ -190,7 +231,7 @@
   .modal
     &__dialog
       min-width: 64%
-@media (max-width: 768px)
+@media (max-width: 767px)
   body
     padding-top: 78px
   .container
@@ -286,6 +327,8 @@
       margin-bottom: 30px
     &__booking
       margin-bottom: 30px
+  .rating
+    padding-top: 6px
   .booking
     display: flex
     flex-direction: column
