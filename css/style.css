@@ -47,7 +47,18 @@ iframe {
   height: 50px;
 }
 
+.input:placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+
+.input::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+
 .message {
+  color: #BDBDBD;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -56,6 +67,16 @@ iframe {
   border: none;
   resize: none;
   padding: 18px 23px;
+}
+
+.message:placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+
+.message::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
 }
 
 .button {
@@ -2399,6 +2420,9 @@ template {
 }
 
 @media (max-width: 320px) {
+  body {
+    padding-top: 71px;
+  }
   .container {
     max-width: 279px;
   }
@@ -2412,8 +2436,11 @@ template {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  .navbar-bottom {
+    top: 71px;
+  }
   .breadcrumb-list {
-    padding: 12px 0 14px;
+    padding: 19px 0 14px;
   }
   .hotel {
     padding: 5px 0 40px;
