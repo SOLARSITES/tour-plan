@@ -197,11 +197,18 @@
     border: none
     cursor: pointer
 .map
-  display: none
   width: 347px
   height: 213px
   background-color: $secondary
+  background-image: url(../img/google-map.jpg)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
   border-radius: 10px
   overflow: hidden
-  &--visible
-    display: block
+  cursor: grab
+.iframe
+  &-map
+    display: none
+    &--visible
+      display: block

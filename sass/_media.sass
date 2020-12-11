@@ -56,6 +56,11 @@
     &__room
       margin-bottom: 32px
   .footer
+    &__contact
+      &-address
+        text-align: left
+      &-phone
+        text-align: left
     &-bottom
       max-width: 633px
     &__input
@@ -97,7 +102,7 @@
       margin-bottom: 30px
     &-features
       flex-direction: row
-      height: 210px
+      min-height: 210px
   .booking
     width: 340px
     padding: 29px 22px 26px 22px
@@ -190,11 +195,6 @@
     &__text
       margin-left: -2px
       margin-bottom: 21px
-    &__contact
-      &-list
-        margin-left: 6px
-      &-data
-        margin-bottom: 21px
     &__social
       &-network
         grid-row: 1 / 2
@@ -227,7 +227,10 @@
         grid-row: 4
         grid-column: span 5
       &-list
+        margin-left: 6px
         margin-bottom: 18px
+      &-data
+        margin-bottom: 21px
   .modal
     &__dialog
       min-width: 64%
@@ -403,6 +406,11 @@
       margin-bottom: 56px
     &__logo
       width: 104px
+    &__additional
+      min-width: auto
+      margin-left: 0
+    &__legal
+      margin-left: 0
     &__input
       &-group
         flex-basis: 100%
@@ -480,6 +488,8 @@
         grid-row: 2
         grid-column: 1
         flex-wrap: wrap
+        margin-top: 0
+        margin-left: 0
     &__title
       &--inline
         flex-basis: 100%
@@ -488,15 +498,21 @@
       &--mb-2
         margin-bottom: 24px
     &__additional
-      grid-row: 3
-      grid-column: 1
-    &__categories
       grid-row: 4
       grid-column: 1
-    &__legal
-      justify-self: start
+      margin-top: 0
+      margin-left: 0
+    &__categories
       grid-row: 5
       grid-column: 1
+      margin-top: 0
+      margin-left: 0
+    &__legal
+      grid-row: 3
+      grid-column: 1
+      justify-self: start
+      margin-top: 0
+      margin-left: 0
     &__contact
       &-details
         grid-row: 6
@@ -514,22 +530,64 @@
       flex-basis: 100%
       margin-bottom: 14px
 @media (max-width: 320px)
+  .container
+    max-width: 279px
   .navbar
+    &__logo
+      margin-bottom: 5px
     &__search
       &--mobile
         &--visible
           max-width: 245px
+    &-top
+      padding-top: 24px
+      padding-bottom: 24px
+  .breadcrumb
+    &-list
+      padding: 12px 0 14px
   .hotel
     padding: 5px 0 40px
+    &-info
+      padding-bottom: 38px
+      &__description
+        margin-top: 0
     &-slider
       height: 179px
+  .offer
+    padding: 3px 10px 4px 10px
+  .stars
+    margin-right: 15px
   .booking
     display: block
-    padding: 29px 21px 26px 22px
+    padding: 29px 21px 26px 23px
     height: 210px
+    &__start
+      margin-bottom: 2px
+    &__per
+      &-room
+        margin-top: -1px
+    &__icon
+      margin-top: -2px
+    &__description
+      margin-left: 7px
+    &__number
+      &-call
+        margin-right: 3px
+    &__button
+      padding: 11px 6px 9px 0
   .map
     height: 173px
+  .newsletter
+    padding: 66px 0 66px
+    &-wrapper
+      max-width: 280px
+    &-title
+      margin-bottom: 26px
+      &__strong
+        margin-top: 6px
   .subscribe
+    &__input
+      padding-left: 21px
     &__button
       min-width: 65px
   .reviews
@@ -538,12 +596,35 @@
       line-height: 23px
     &-slider
       &__item
-        padding: 0 29px 36px 33px
+        padding: 0 29px 36px 32px
+      &__profile
+        margin-right: 6px
+      &__rating
+        margin-left: 3px
+      &__button
+        top: 30px
+        &--prev
+          margin-left: -92px
+        &--next
+          margin-right: -88px
   .activities
+    padding: 20px 0 40px
+    &__container
+      max-width: 280px
     &__title
       font-size: 18px
       line-height: 23px
-      margin-bottom: 36px
+      margin-bottom: 37px
+    &__card
+      &--chamarel
+        order: 1
+      &--gymkhana
+        order: 3
+      &--tamarind
+        order: 2
+        margin-bottom: 28px
+      &--discovery
+        order: 4
   .packages
     &__title
       font-size: 21px
@@ -559,19 +640,70 @@
       max-width: 100%
       padding: 29px 22px 25px 22px
   .footer
+    padding: 68px 0 21px
+    &__container
+      max-width: 280px
     &-grid
       margin-bottom: 30px
+    &__logo
+      width: 96px
     &-bottom
+      margin-top: -3px
+      margin-left: -2px
       &__item
-        margin-right: 12px
+        margin-right: 9px
+      &__pay
+        margin-left: 1px
+    &__social
+      &-network
+        grid-row: 2
+        margin-top: -2px
+        margin-left: 0
+      &-links
+        margin-left: 2px
+        margin-top: 2px
+    &__additional
+      grid-row: 4
+      margin-top: -10px
+      margin-left: 0
+    &__categories
+      grid-row: 5
+      margin-top: -10px
+      margin-left: 0
+    &__legal
+      grid-row: 3
+      margin-top: -12px
+      margin-left: 0
+    &__contact
+      &-details
+        margin-top: -7px
+      &-list
+        margin-left: 2px
+        margin-bottom: 18px
+      &-address
+        text-align: left
+      &-data
+        &--mail
+          margin-top: 2px
+      &-phone
+        text-align: left
+        max-width: 235px
+    &__icon
+      &-wrapper
+        margin-top: 5px
+        min-width: 27px
     &__title
       &--mb-1
         margin-top: 7px
-        margin-bottom: 22px
+        margin-bottom: 25px
       &--mb-2
-        margin-bottom: 15px
+        margin-bottom: 16px
     &__form
       max-width: 293px
+    &__button
+      min-width: 159px
+    &__info
+      margin-bottom: 15px
   .modal
     &__dialog
       min-width: 100%

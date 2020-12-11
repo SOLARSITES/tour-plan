@@ -105,6 +105,6 @@ $(document).ready(function () {
   $(`[type="tel"]`).mask("+7(000)-000-00-00");
 
   $(document).on("scroll", function () {
-    $("#map").addClass("map--visible");
+    $("#iframe-map").addClass("iframe-map--visible");
   });
 });

@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -18,7 +18,7 @@
     <header class="navbar navbar__mobile">
       <div class="container">
         <div class="navbar-top">
-          <a class="logo" href="https://glo.firstar.ru/tour-plan/">
+          <a class="logo navbar__logo" href="https://glo.firstar.ru/tour-plan/">
             <img
               class="logo__image"
               src="img/horizontal-logo.svg"
@@ -275,6 +275,8 @@
             <!-- /.booking -->
             <div id="map" class="map">
               <iframe
+                id="iframe-map"
+                class="iframe-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7909.960934899612!2d79.79910961435858!3d7.577104521103642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sen!2sen!4v1606228148646!5m2!1sen!2sen"
                 style="border: 0"
                 allowfullscreen=""
@@ -710,10 +712,10 @@
       <!-- /.container -->
     </section>
     <section class="activities">
-      <div class="container">
+      <div class="container activities__container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card activities__card--chamarel">
             <img
               class="card__image"
               src="img/activities/activity-01.jpg"
@@ -725,7 +727,7 @@
             </button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card activities__card--gymkhana">
             <img
               class="card__image"
               src="img/activities/activity-02.jpg"
@@ -737,7 +739,7 @@
             </button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card activities__card--tamarind">
             <img
               class="card__image"
               src="img/activities/activity-03.jpg"
@@ -749,7 +751,7 @@
             </button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card activities__card--discovery">
             <img
               class="card__image"
               src="img/activities/activity-04.jpg"
@@ -767,7 +769,7 @@
       <!-- /.container -->
     </section>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <div class="footer-grid">
           <a class="logo footer__logo" href="https://glo.firstar.ru/tour-plan/">
             <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
@@ -871,7 +873,7 @@
                   </span>
                   <span class="footer__contact-phone">
                     Tel (hotline) Monday – Saturday:
-                    <a class="footer__contact-link" href="tel:52566138">52–56–61–38</a>
+                    <a class="footer__contact-link" href="tel:52566138">52&#8209;56-61-38</a>
                     (08:00 am – 20:00 pm)
                   </span>
                   <span class="footer__contact-phone">
@@ -882,7 +884,7 @@
                 </div>
                 <!-- /.footer__link-wrapper -->
               </li>
-              <li class="footer__contact-data">
+              <li class="footer__contact-data footer__contact-data--mail">
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/email.svg" alt="Icon: E-mail" />
                 </div>
