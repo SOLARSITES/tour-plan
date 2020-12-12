@@ -23,6 +23,10 @@ iframe {
   height: 100%;
 }
 
+.body-locked {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
@@ -955,9 +959,11 @@ template {
   color: #ffffff;
   background-color: #0A223D;
   max-width: 364px;
-  height: 500px;
-  padding: 40px 21px 30px 43px;
-  overflow-y: scroll;
+  max-height: 500px;
+  padding: 40px 21px 28px 43px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0A223D #85919E;
 }
 
 .blue-haven__case-content::-webkit-scrollbar {

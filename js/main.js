@@ -53,6 +53,7 @@ $(document).ready(function () {
 
   function openModal() {
     var targetModal = $(this).attr("data-href");
+    $("#body").addClass("body-locked");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
   }
@@ -61,6 +62,7 @@ $(document).ready(function () {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
+    $("#body").removeClass("body-locked");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
