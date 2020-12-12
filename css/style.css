@@ -955,7 +955,40 @@ template {
   color: #ffffff;
   background-color: #0A223D;
   max-width: 364px;
+  height: 500px;
   padding: 40px 21px 30px 43px;
+  overflow-y: scroll;
+}
+
+.blue-haven__case-content::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.blue-haven__case-content::-webkit-scrollbar-button {
+  background-color: #0A223D;
+}
+
+.blue-haven__case-content::-webkit-scrollbar-track {
+  background-color: #0A223D;
+}
+
+.blue-haven__case-content::-webkit-scrollbar-track-piece {
+  background-color: #85919E;
+}
+
+.blue-haven__case-content::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #0A223D;
+  border-radius: 6px;
+}
+
+.blue-haven__case-content::-webkit-scrollbar-corner {
+  background-color: #0A223D;
+}
+
+.blue-haven__case-content::-webkit-resizer {
+  background-color: #0A223D;
 }
 
 .blue-haven__title {
@@ -2417,6 +2450,21 @@ template {
     flex-basis: 100%;
     margin-bottom: 14px;
   }
+  .modal__dialog {
+    min-width: 100%;
+    padding: 33px 23px;
+  }
+  .modal__message {
+    margin-bottom: 14px;
+  }
+  .modal__button {
+    order: 1;
+    margin-top: 0;
+  }
+  .modal__info {
+    flex-basis: 100%;
+    margin-bottom: 14px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2649,19 +2697,7 @@ template {
     margin-bottom: 15px;
   }
   .modal__dialog {
-    min-width: 100%;
     padding: 33px 13px;
-  }
-  .modal__message {
-    margin-bottom: 14px;
-  }
-  .modal__button {
-    order: 1;
-    margin-top: 0;
-  }
-  .modal__info {
-    flex-basis: 100%;
-    margin-bottom: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
